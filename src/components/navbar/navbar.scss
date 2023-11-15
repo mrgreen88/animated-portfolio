@@ -4,5 +4,7 @@
   .wrapper {
     max-width: 1366px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
