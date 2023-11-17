@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panoul utilizatorului</title>
+    <link rel="stylesheet" href="./css/dashboard.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- https://swiperjs.com/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+
+    <div class="side-menu">
+        <div class="brand-name">
+            <a href="index.html" class="btn btn-1" title="Înapoi la site">Liceul Mîndrești</a>
+        </div>
+        <ul>
+            <li i class="uil uil-create-dashboard"></i>&nbsp; Panoul meu</li>
+            <li i class="uil uil-book-reader"></i>&nbsp; Studenți</li>
+            <li i class="uil uil-user-md"></i>&nbsp; Profesori</li>
+            <li i class="uil uil-envelope-add"></i>&nbsp; Mesaje</li>
+            <li i class="uil uil-file-question"></i>&nbsp; Ajutor</li>
+            <li i class="uil uil-sliders-v"></i>&nbsp; Setări</li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Salut, cu ce te ajut azi?">
+                    <button type="submit" class="btn">Caută</button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Contul meu</a>
+                    <img src="images/img/bell.svg" alt="">
+                    <div class="img-case">
+                        <img src="images/img/user.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="cards">
+
+                <div class="card">
+                    <div class="box">
+                        <h2>Obiecte studiate</h2>
+                        <h3>Lista obiectelor pentru anul școlar 2022-2023</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="images/img/knowledge.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h2>Obiecte opționale</h2>
+                        <h3>Lista obiectelor opționale pentru anul școlar 2022-2023</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="images/img/secondary.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h2>Orarul lecțiilor</h2>
+                        <h3>Orarul lecțiilor pentru luna mai</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="images/img/lesson.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h2>Borderou</h2>
+                        <h3>Notele simetriale și media anuală</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="images/img/report-card.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="content-2">
+                <div class="lista-elevilor">
+                    <div class="title">
+                        <h2>Lista elevilor clasei a XII a Real</h2>
+                    </div>
+                    <table>
+                        <tr class="tr-title">
+                            <th>Prenume</th>
+                            <th>Nume de familie</th>
+                            <th>Data nașterii</th>
+                            <th>Localitatea</th>
+                            <th>Adresa</th>
+                            <th>Fișa elevului</th>
+                        </tr>
+                        <tr>
+                            <td>Ivan</td>
+                            <td>Tăetu</td>
+                            <td>01-01-2005</td>
+                            <td>Mîndrești</td>
+                            <td>Bujor 4</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Iulian</td>
+                            <td>Carauș</td>
+                            <td>05-03-2005</td>
+                            <td>Ciulucani</td>
+                            <td>Haiduc 16</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student-1">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Miroslav</td>
+                            <td>Cașciuc</td>
+                            <td>24-12-2004</td>
+                            <td>Codru</td>
+                            <td>Timuș 8</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student-2">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mihail</td>
+                            <td>Cazacenco</td>
+                            <td>15-08-2004</td>
+                            <td>Mîndrești</td>
+                            <td>Arborilor 12</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Cristin</td>
+                            <td>Bejan</td>
+                            <td>12-02-2005</td>
+                            <td>Mîndrești</td>
+                            <td>Bujor 13</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student-1">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Mihail</td>
+                            <td>Spînu</td>
+                            <td>03-11-2004</td>
+                            <td>Codru</td>
+                            <td>Carte 9</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student-2">Detalii</a></td>
+                        </tr>
+                        <tr>
+                            <td>Victor</td>
+                            <td>Slabenco</td>
+                            <td>14-12-2004</td>
+                            <td>Ciulucani</td>
+                            <td>Paris 15</td>
+                            <td><a href="#" class="btn btn-2" data-modal="#modal_student">Detalii</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="informatii-elev">
+                    <div class="title">
+                        <h2>Informații elev</h2>
+                    </div>
+                    <table class="table-vertical">
+                        <tr>
+                            <td class="left-row">Prenume</td>
+                            <td class="right-row">Ivan</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">Nume de familie</td>
+                            <td class="right-row">Tăetu</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">Data nașterii</td>
+                            <td class="right-row">01 ianuarie 2005</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">Localitatea</td>
+                            <td class="right-row">Mîndrești</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">Telefon fix</td>
+                            <td class="right-row">25844111</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">Telefon mobil</td>
+                            <td class="right-row">69123456</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">E-mail</td>
+                            <td class="right-row">test@test.com</td>
+                        </tr>
+                        <tr>
+                            <td class="left-row">CNP</td>
+                            <td class="right-row">2006123456789</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="modal_student">
+
+        <div class="modal-dialog">
+
+            <button class="modal-close" type="button" data-close>
+                <img src="images/img/multiply.svg" alt="">
+            </button>
+
+            <div class="modal-content">
+
+                <h3 class="modal-title">Fișa elevului</h3>
+
+                <div class="text-center">
+                    <a href="#" class="btn btn-3 btn-3-left">Editează datele</a>
+                    <a href="#" class="btn btn-3 btn-3-right">Note precedente</a>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-col col-left">
+                        <h4 class="timeline-title">Denumirea</h4>
+                        <table id="timeline-table-left">
+                            <tr>
+                                <td class="table-left">Prenume</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Nume de familie</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data nașterii</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Localitatea</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Adresa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon fix</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon mobil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">E-mail</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">CNP părinți</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data înmatriculării</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Gen</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Diriginte</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Clasa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Profil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Merite sportive</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="timeline-col col-right">
+                        <h4 class="timeline-title">Informația</h4>
+                        <table id="timeline-table-right">
+                            <tr>
+                                <td class="table-right">Ivan</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Tăetu</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">01 ianuarie 2005</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">s.Mîndrești</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">str.Bujor 4</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37325844111</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37369123456</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">test@test.com</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Mama - 2006123456789</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">12 iulie 2019</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Masculin</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Ivan Ivanov</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">XII</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Real</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Șah, footbal, tenis de masă</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal_student-1">
+
+        <div class="modal-dialog">
+
+            <button class="modal-close" type="button" data-close>
+                <img src="images/img/multiply.svg" alt="">
+            </button>
+
+            <div class="modal-content">
+
+                <h3 class="modal-title">Fișa elevului</h3>
+
+                <div class="text-center">
+                    <a href="#" class="btn btn-3 btn-3-left">Editează datele</a>
+                    <a href="#" class="btn btn-3 btn-3-right">Note precedente</a>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-col col-left">
+                        <h4 class="timeline-title">Denumirea</h4>
+                        <table id="timeline-table-left">
+                            <tr>
+                                <td class="table-left">Prenume</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Nume de familie</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data nașterii</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Localitatea</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Adresa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon fix</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon mobil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">E-mail</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">CNP părinți</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data înmatriculării</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Gen</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Diriginte</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Clasa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Profil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Merite sportive</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="timeline-col col-right">
+                        <h4 class="timeline-title">Informația</h4>
+                        <table id="timeline-table-right">
+                            <tr>
+                                <td class="table-right">Iulian</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Carauș</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">05 Martie 2005</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">s.Ciulucani</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">str.Haiduc 16</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37325844111</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37369123456</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">test@test.com</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Mama - 2006123456789</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">15 iulie 2019</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Masculin</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Ivan Ivanov</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">XII</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Real</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">footbal, tenis de masă</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="modal_student-2">
+
+        <div class="modal-dialog">
+
+            <button class="modal-close" type="button" data-close>
+                <img src="images/img/multiply.svg" alt="">
+            </button>
+
+            <div class="modal-content">
+
+                <h3 class="modal-title">Fișa elevului</h3>
+
+                <div class="text-center">
+                    <a href="#" class="btn btn-3 btn-3-left">Editează datele</a>
+                    <a href="#" class="btn btn-3 btn-3-right">Note precedente</a>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-col col-left">
+                        <h4 class="timeline-title">Denumirea</h4>
+                        <table id="timeline-table-left">
+                            <tr>
+                                <td class="table-left">Prenume</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Nume de familie</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data nașterii</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Localitatea</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Adresa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon fix</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Telefon mobil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">E-mail</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">CNP părinți</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Data înmatriculării</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Gen</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Diriginte</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Clasa</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Profil</td>
+                            </tr>
+                            <tr>
+                                <td class="table-left">Merite sportive</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="timeline-col col-right">
+                        <h4 class="timeline-title">Informația</h4>
+                        <table id="timeline-table-right">
+                            <tr>
+                                <td class="table-right">Miroslav</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Cașciuc</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">24 Decembrie 2004</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">s.Codru</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">str.Timuș 8</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37325844111</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">+37369123456</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">test@test.com</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Tata - 2006123456789</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">13 iulie 2019</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Masculin</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Ivan Ivanov</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">XII</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Real</td>
+                            </tr>
+                            <tr>
+                                <td class="table-right">Dame, footbal, tenis de masă</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./dashboard.js"></script>
+
+
+  </body>
+</html>

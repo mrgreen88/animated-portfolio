@@ -1,0 +1,130 @@
+.login__container {
+    background: var(--color-bg1);
+    width: 35rem;
+    height: auto;
+    font-family: inherit;
+    padding: 0 2rem;
+    font-size: 1rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 2rem 2rem rgba(29, 23, 40, 0.5);
+}
+
+
+.signin {
+    color: var(--color-white);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+}
+
+.signin {
+    animation: animateForm 5s ease forwards;
+}
+
+.signin h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login__social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.login__social a {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 3rem;
+    height: 3rem;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.login__social a:hover {
+    background: var(--color-success);
+    color: var(--color-black);
+}
+
+.signin p {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.signin form input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--color-white);
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.signin form input::placeholder {
+    color: var(--color-white);
+}
+
+.signin form input[type="submit"] {
+    background: var(--color-primary);
+    transition: var(--transition);
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+.signin form input[type="submit"]:hover {
+    background: var(--color-bg3);
+    color: var(--color-black);
+}
+
+.signin form small {
+    display: block;
+    margin-top: 1rem;
+}
+
+.signin form small label {
+    color: var(--color-yelow);
+    cursor: pointer;
+}
+
+.error-name {
+    text-align: center;
+    line-height: 2;
+}
+
+
+
+.signup {
+    display: none;
+}
+
+#toggle:checked ~ .signin__active {
+    display: none;
+}
+
+#toggle:checked ~ .signup {
+    display: block;
+}
+
+@keyframes animateForm {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#toggle {
+    appearance: none;
+}

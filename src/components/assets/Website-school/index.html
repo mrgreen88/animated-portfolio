@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liceul teoretic "Dimitrie Cantemir"</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONSCOUT CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- https://swiperjs.com/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html"
+          ><h4>Liceul Teoretic "Dimitrie Cantemir" din Mîndrești</h4></a
+        >
+        <ul class="nav__menu">
+          <li><a href="index.html">Principală</a></li>
+          <li><a href="despre.html">Despre</a></li>
+          <li><a href="cursuri.html">Cursuri</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+          <li><a href="login.html"><p title="Pentru elevi sau profesori">Login</p></a></li>
+        </ul>
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <!-- =================Sfirsitul Navigatiei================== -->
+
+    <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <h1>Omul fără învăţătură, e că pământul fără udătură</h1>
+          <p>
+            "Şcoala trebuie să urmărească tot timpul că tânărul să părăsească
+            băncile ei nu ca specialist, ci ca o personalitate armonioasă".
+            <b>Albert Einstein</b>
+          </p>
+          <a href="cursuri.html" class="btn btn-primary">Să începem</a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__right-image">
+            <img src="./images/header.svg" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- =================END OF HEADER================== -->
+
+    <section class="categories">
+      <div class="container categories__container">
+        <div class="categories__left">
+          <h1>Obiecte studiate</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            est facilis enim laboriosam expedita! Similique ut recusandae
+            corrupti, soluta sapiente sunt! Natus voluptatem quisquam inventore
+            est assumenda mollitia velit nam.
+          </p>
+          <a href="cursuri.html" class="btn">Învață mai mult</a>
+        </div>
+
+        <div class="categories__right">
+          <articte class="category">
+            <span class="category__icon"><i class="uil uil-x-add"></i></span>
+            <h5>Matematica</h5>
+            <p>
+              Matematica este limba cu care Dumnezeu a scris universul.
+              Matematica este ştiinţa care trage concluzii necesare.
+            </p>
+          </articte>
+
+          <articte class="category">
+            <span class="category__icon"
+              ><i class="uil uil-letter-english-a"></i
+            ></span>
+            <h5>Limba română</h5>
+            <p>Limba este întâiul mare poem al unui popor.</p>
+          </articte>
+
+          <articte class="category">
+            <span class="category__icon"
+              ><i class="uil uil-hospital-symbol"></i
+            ></span>
+            <h5>Istoria</h5>
+            <p>
+              Istoria nu este doar o simplă înșiruire de fapte și evenimente, ea
+              este o știină ce permite cunoașterea trecutului prin raportarea la
+              prezent.
+            </p>
+          </articte>
+
+          <articte class="category">
+            <span class="category__icon"><i class="uil uil-dna"></i></span>
+            <h5>Biologia</h5>
+            <p>Biologia ne face părinţi, iar inima, Mamă şi Tată.</p>
+          </articte>
+
+          <articte class="category">
+            <span class="category__icon"><i class="uil uil-flask"></i></span>
+            <h5>Chimia</h5>
+            <p>
+              Elementele chimice, dacă sunt aşezate în ordine crescătoare după
+              masa atomică, prezintă o periodicitate de proprietăţi.
+            </p>
+          </articte>
+
+          <articte class="category">
+            <span class="category__icon"
+              ><i class="uil uil-bring-front"></i
+            ></span>
+            <h5>Fizica</h5>
+            <p>
+              Nimic nu slăbeşte şi nu distruge corpul omului ca o lungă
+              inactivitate fizică.
+            </p>
+          </articte>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================END OF CATEGORY================== -->
+
+    <section class="courses">
+      <h2>Cursuri recomandate</h2>
+      <div class="container courses__container">
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/img/cultura_vorbiri.jpg" />
+          </div>
+          <div class="course__info">
+            <h4>Cultura vorbirii</h4>
+            <p>
+              Cultura vorbirii este un set de cunoștințe, abilități și abilități
+              care oferă autorului vorbirii o construcție ușoară a enunțurilor
+              vorbirii pentru soluționarea optimă a problemelor de comunicare
+            </p>
+            <a href="cursuri.html" class="btn btn-primary">Învață mai mult</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/img/robotics.jpg" />
+          </div>
+          <div class="course__info">
+            <h4>Robotică</h4>
+            <p>
+              Robotica este știința care se ocupă cu tehnologia, proiectarea și
+              fabricarea roboților. Robotica necesită cunoștințe de electronică,
+              mecanică și programare, iar persoana care lucrează în acest
+              domeniu a ajuns să fie cunoscută ca robotician.
+            </p>
+            <a href="cursuri.html" class="btn btn-primary">Învață mai mult</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./images/img/tehnologii.jpg" />
+          </div>
+          <div class="course__info">
+            <h4>Tehnologia Informației și a Comunicațiilor</h4>
+            <p>
+              Tehnologia informației sau și Tehnologia informației și a
+              comunicațiilor, abreviat (cel mai adesea IT) TI respectiv TIC,
+              este tehnologia necesară pentru prelucrarea (procurarea,
+              procesarea, stocarea, convertirea și transmiterea) informației, în
+              particular prin folosirea computerelor (calculatoarelor
+              electronice).
+            </p>
+            <a href="cursuri.html" class="btn btn-primary">Învață mai mult</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =================END OF COURSES================== -->
+
+
+
+
+    <section class="faqs">
+      <h2>10 de întrebari despre școală pe care să le pui copilului tău</h2>
+      <div class="container faqs__container">
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>
+              Care a fost cel mai bun lucru ce ți s-a întamplat azi la școală?
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Care au fost momentele ce nu ți-au plăcut azi la școală?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Ce te-a făcut să zâmbești astăzi la școală?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Pe cine ai avut ocazia să ajuți azi?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Te-a ajutat unul dintre colegi?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Ce ți-a spus cel mai des doamna învățătoare?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>
+              Daca ar fi să alegi o culoare care să exprime cum te-ai simțit azi
+              la școală, care ar fi aceasta?
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>
+              Daca ai putea da timpul înapoi, ce anume ai schimba din ziua de
+              azi?
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Care este regula ta preferata?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq">
+          <div class="faq__icon"><i class="uil uil-plus"></i></div>
+          <div class="question__answer">
+            <h4>Care este regula cel mai greu de respectat?</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              facere expedita error nihil mollitia ipsam incidunt explicabo rem,
+              numquam reprehenderit, non laboriosam quia repudiandae! Excepturi
+              nobis saepe iste rem eius.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =================END OF FAQs================== -->
+
+
+
+
+    <section class="container testimonials__container mySwiper">
+      <h2>Absolvenți ai liceului</h2>
+      <div class="swiper-wrapper">
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar1.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Diana</h5>
+            <small>Absolventă în 2010</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar2.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Ivan</h5>
+            <small>Absolvent în 2006</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar3.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Vasile</h5>
+            <small>Absolvent în 2012</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar4.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Elena</h5>
+            <small>Absolventă în 2014</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar5.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Andreea</h5>
+            <small>Absolventă în 2009</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./images/avatar6.jpg" />
+          </div>
+          <div class="testimonial__info">
+            <h5>Dana</h5>
+            <small>Absolventă în 2015</small>
+          </div>
+          <div class="testimonial__body">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Praesentium soluta non possimus nisi sequi, dolorem nemo beatae,
+              nesciunt quaerat dicta cupiditate amet quasi rerum est facilis
+              numquam perspiciatis, vero molestiae?
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- =================END OF ABSOLVENTI================== -->
+
+
+
+
+    <footer>
+      <div class="container footer__container">
+
+        <div class="footer__1">
+          <a href="index.html" class="footer__logo">
+            <h4>Liceul teoretic "Dimitrie Cantemir"</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </a>
+        </div>
+
+        <div class="footer__2">
+          <h4></h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Principala</a></li>
+            <li><a href="despre.html">Despre</a></li>
+            <li><a href="cursuri.html">Cursuri</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__3">
+          <h4></h4>
+          <ul class="privacy">
+            <li><a href="#">Politica școlii</a></li>
+            <li><a href="#">Termeni și condiții</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__4">
+          <h4>Contacte</h4>
+          <div>
+            <p>+373 258 44 302</p>
+            <p>str. Mihai Eminescu, 3</p>
+            <p>MD5825 Mîndrești, Raionul Telenești</p>
+          </div>
+
+          <ul class="footer__socials">
+            <li><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+            <li><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+            <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+            <li><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer__copyright">
+        <small>Designed by <span>Ivan Tăetu</span></small>
+      </div>
+      
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        breakpoints: {
+          600: {
+            slidesPerView: 2
+          }
+        }
+      });
+    </script>
+
+
+  </body>
+</html>

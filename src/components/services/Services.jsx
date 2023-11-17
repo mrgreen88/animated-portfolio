@@ -13,7 +13,7 @@ const variants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 2,
+      duration: 1,
       stagerChildren: 0.1,
     },
   },

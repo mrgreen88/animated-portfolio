@@ -49,6 +49,7 @@
 
   .imageContainer img {
     position: absolute;
+    background-size: cover;
     height: 80%;
     right: 0;
     bottom: 0;
@@ -57,7 +58,7 @@
   .slidingTextContainer {
     position: absolute;
     font-size: 50vh;
-    bottom: -114px;
+    bottom: 0;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;

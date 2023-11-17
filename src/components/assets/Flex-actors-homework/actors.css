@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-bg: #002244;
+    --color-oscar: #f5c518;
+    --color-star: #f6c800;
+    --color-violet1: #6244bb;
+    --color-green1: #1b7742;
+    --color-card: #f16321;
+    --color-red: #ff0000;
+    --color-card-not: #f2f2f2;
+    --transition: all 400ms ease;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
+    background: #ccc;
+    font-size: 1rem;
+}
+
+/* ===============header=========== */
+
+.section-title {
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: var(--color-violet1);
+}
+
+/* ====================main================ */
+/* ====================card-flex============= */
+
+.card-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 20px;
+}
+
+.card {
+    margin-top: 3rem;
+    background: var(--color-bg);
+    flex-basis: 370px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+    transition: var(--transition);
+    border-radius: 30px;
+
+    &:hover {
+        box-shadow: 0 0 6px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.card-inner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.img-top {
+    margin: 0 auto;
+    height: 310px;
+    width: 310px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 6px solid var(--color-white);
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.1);
+    margin-top: -75px;
+    transition: var(--transition);
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.10);
+    }
+}
+
+.francis {
+    object-position: top center;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+
+    & h2 {
+        font-weight: 300;
+        font-size: 1.6rem;
+    }
+}
+
+.tag-name {
+    font-size: 1.1rem;
+    align-self: flex-end;
+    margin: 2px 0 5px 0;
+    text-transform: capitalize;
+    color: var(--color-oscar);
+
+    &.nominated {
+        color: var(--color-card-not);
+    }
+}
+
+
+.film-info {
+    display: flex;
+    border-top: 5px solid var(--color-green1);
+    border-bottom: 5px solid var(--color-green1);
+    transition: var(--transition);
+
+    &:hover {
+        border-color: var(--color-green1);
+        cursor: pointer;
+        box-shadow: 0px 0px 6px 4px rgba(116, 116, 116, 0.75);
+    }
+}
+
+.film-img {
+    width: 120px;
+    height: 190px;
+    object-fit: cover;
+    object-position: top center;
+    flex-grow: 1;
+}
+
+.film-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.film-text-description {
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.film-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-red);
+}
+
+
+.star-rating {
+    color: var(--color-oscar);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.film-num {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.imdb-img {
+    align-self: self-end;
+}
+
+.title {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin: 10px 0 10px;
+    font-weight: 500;
+    color: var(--color-red);
+
+    & span {
+        font-weight: 300;
+    }
+}
+
+.description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.award-avatar img {
+    height: 100px;
+    margin-bottom: -13px;
+}
+
+.award-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-transform: capitalize;
+    color: var(--color-oscar);
+    font-weight: 500;
+
+    & .grey {
+        color: var(--color-white);
+        font-weight: 300;
+        margin-bottom: 3px;
+    }
+}
+
+.top-rated-btn {
+    color: var(--color-black);
+    background: var(--color-oscar);
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-top: 2px;
+
+    font-weight: 500;
+    transition: var(--transition);
+
+    &:hover {
+        background: var(--color-card);
+    }
+}
+
+/* ================section actors========== */
+
+.actors-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.card-actor {
+    background-color: rgba(1, 1, 1, 0.9);
+    display: flex;
+    flex-direction: column;
+    flex-basis: 24%;
+    min-width: 280px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px 2px rgba(10, 10, 10, 0.8);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card-img {
+    height: 250px;
+    margin-bottom: 1rem;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px 15px 0 0;
+    transition: var(--transition);
+}
+
+.card-img:hover {
+    transform: scale(1.1);
+}
+
+.card-1 {
+    background-image: url(img/tomhardy.webp);
+    background-position: center;
+}
+
+.card-2 {
+    background-image: url(img/heat.webp);
+    background-position: left;
+}
+
+.card-3 {
+    background-image: url(img/Christian-Bale-Movies.webp);
+    background-position: calc(-3.5rem);
+}
+
+.card-4 {
+    background-image: url(img/ironman.webp);
+    background-position: calc(-5rem);
+}
+
+.card-5 {
+    background-image: url(img/henry-cavill-superman.webp);
+}
+
+.card-6 {
+    background-image: url(img/samuel.webp)
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.card-actor h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.card-subtitle {
+    color: var(--color-white);
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.card-btn {
+    display: inline-block;
+    width: 240px;
+    padding: 0.9rem;
+    background: var(--color-card);
+    color: var(--color-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 1rem auto;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+
+.card-btn:hover {
+    background: var(--color-star);
+    color: var(--color-black);
+}
