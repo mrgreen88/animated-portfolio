@@ -1,0 +1,110 @@
+.about {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+
+  .wrapper {
+    max-width: 1160px;
+    height: 100vh;
+    margin: auto;
+
+    h2 {
+      font-size: 50px;
+      color: orange;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .card {
+        position: relative;
+        width: 280px;
+        height: 400px;
+        background-color: rgb(146, 82, 210);
+        color: white;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        transition: 1s;
+
+        &:hover {
+          transform: translateX(50%);
+        }
+
+        .imgBox {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          overflow: hidden;
+          transform-origin: left;
+          transform-style: preserve-3d;
+          background: #000;
+          transition: 1s;
+
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transform-style: preserve-3d;
+          }
+        }
+
+        .details {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          padding: 30px;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+
+          h4 {
+            font-size: 20px;
+            margin-bottom: 30px;
+          }
+
+          p {
+            text-align: justify;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 70px;
+    }
+
+    button {
+      padding: 15px;
+      width: 200px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      background-color: orange;
+      transition: all 300ms ease;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: transparent;
+        border-color: orange;
+      }
+    }
+  }
+}
+
+.card:hover .imgBox {
+  transform: rotateY(-180deg);
+  z-index: 2;
+}

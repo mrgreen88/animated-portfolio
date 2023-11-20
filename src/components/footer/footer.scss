@@ -1,0 +1,12 @@
+.footer {
+   height: 3rem;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   span {
+      color: red;
+      font-weight: 800;
+   }
+}

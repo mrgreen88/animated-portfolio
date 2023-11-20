@@ -1,0 +1,148 @@
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  overflow: auto;
+  background-color: rgba(3, 9, 30, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  .modal__dialog {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 60%;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    position: relative;
+    //transform: rotateX(90deg);
+    transition: transform 0.3s linear;
+
+    .modal__close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.2rem;
+      z-index: 1;
+      padding: 0;
+      background: none;
+      border: 0;
+      transition: all 300ms ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: rotateZ(90deg);
+      }
+    }
+
+    .modal__content {
+      padding: 3rem 1rem;
+
+      .modal__title {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: #111;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+    }
+
+    .timeline {
+      display: flex;
+      margin: 0 auto 3rem;
+      width: 100%;
+      max-width: 820px;
+      color: #111;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 3px;
+        height: 100%;
+        border-radius: 2px;
+        background-color: #111;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 2;
+      }
+    }
+  }
+
+  &.show {
+    display: flex;
+  }
+}
+
+.timeline__col {
+  width: 50%;
+
+  &.timeline__col-left {
+    text-align: right;
+    padding-right: 2rem;
+    position: relative;
+  }
+
+  &.timeline__col-right {
+    padding-left: 2rem;
+  }
+}
+
+.timeline__col .capitalize {
+  text-transform: capitalize;
+}
+
+.timeline__title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.timeline__item {
+  color: #111;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline__date {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+.timeline__subtitle {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: rebeccapurple;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.timeline__location {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+
+  & p {
+    font-weight: 700;
+  }
+}
+
+.timeline__responsibility {
+  font-size: 1rem;
+  font-weight: 300;
+
+  & span {
+    font-style: italic;
+    font-weight: 600;
+  }
+}

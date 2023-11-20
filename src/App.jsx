@@ -1,10 +1,13 @@
 import "./app.scss";
+import About from "./components/about/About";
+import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 import Hero from "./components/hero/Hero";
+import Modal from "./components/modal/Modal";
 import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
-import Test from "./Test";
 
 const App = () => {
   return (
@@ -16,18 +19,23 @@ const App = () => {
       <section id="About">
         <Parallax type="about" />
       </section>
-      <section>About</section>
+      <section>
+        <About />
+      </section>
       <section id="Services">
         <Parallax type="services" />
       </section>
       <section>
-        <Services />
+        <span id="Portfolio">
+          <Services />
+        </span>
       </section>
-      <section>
-        <Portfolio />
+      <Portfolio />
+      <section id="Contact">
+        <Contact />
       </section>
-      <section id="Contact">Contact</section>
-      {/* <Test /> */}
+      <Footer />
+      <Modal />
     </div>
   );
 };
